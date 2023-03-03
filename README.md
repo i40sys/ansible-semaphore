@@ -28,6 +28,12 @@ mkdir config data repos
 chown 1001 config data repos
 ```
 
+## clone the repo
+
+```bash
+git clone https://github.com/i40sys/ansible-semaphore.git .
+``
+
 ## run the service
 
 ```bash
