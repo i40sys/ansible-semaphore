@@ -1,0 +1,5 @@
+- hosts: all
+  become: true
+  name: Installing gotop
+  roles:
+    - role: oriolrius.iot_stack.gotop

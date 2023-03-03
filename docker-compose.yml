@@ -1,0 +1,20 @@
+version: '3'
+services:
+  semaphore:
+    image: semaphoreui/semaphore:prod-compose
+    container_name: semaphore
+    ports:
+      - 3000:3000
+    volumes:
+      - ./config:/etc/semaphore
+      - ./data:/var/lib/semaphore
+      - ./repos:/repos
+      #- ./ssh-keys:/home/semaphore/.ssh
+    environment:
+      SEMAPHORE_DB_DIALECT: bolt
+      SEMAPHORE_PLAYBOOK_PATH: /tmp/semaphore/
+      SEMAPHORE_ADMIN_NAME: i40sys
+      SEMAPHORE_ADMIN_EMAIL: industry40systems@gmail.com
+      SEMAPHORE_ADMIN: i40sys
+      SEMAPHORE_ADMIN_PASSWORD: 'c0*WKBF5Gs^Ht4J13.d'
+      SEMAPHORE_ACCESS_KEY_ENCRYPTION: BGWUo8H6OuVdoSbPrdC0wNaTdYeEWyy1T1o0pB9jfjQ=
