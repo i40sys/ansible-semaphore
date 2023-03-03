@@ -50,8 +50,8 @@ sudo docker logs -f semaphore
 
 1. create new project
 1. add key store:
-  1. none (for local)
-  1. SSH private key
+    1. none (for local)
+    1. SSH private key
 1. add environment: none
 1. add inventory entry
 1. add repository entry
