@@ -18,6 +18,12 @@ sudo docker images ls | grep semaphore
 
 # Running the service
 
+## clone the repo
+
+```bash
+git clone https://github.com/i40sys/ansible-semaphore.git .
+```
+
 ## create directories
 
 Copy the `docker-compose.yml` file to the path where you want to run the service.
@@ -25,14 +31,8 @@ Copy the `docker-compose.yml` file to the path where you want to run the service
 ```bash
 # go to the path where you have your docker-compose.yml
 mkdir config data repos
-chown 1001 config data repos
+sudo chown 1001 config data repos
 ```
-
-## clone the repo
-
-```bash
-git clone https://github.com/i40sys/ansible-semaphore.git .
-``
 
 ## run the service
 
