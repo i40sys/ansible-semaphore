@@ -21,12 +21,10 @@ sudo docker images ls | grep semaphore
 ## clone the repo
 
 ```bash
-git clone https://github.com/i40sys/ansible-semaphore.git .
+git clone https://github.com/i40sys/ansible-semaphore.git
 ```
 
 ## create directories
-
-Copy the `docker-compose.yml` file to the path where you want to run the service.
 
 ```bash
 # go to the path where you have your docker-compose.yml
@@ -49,10 +47,10 @@ sudo docker ps
 # check the logs
 
 ```bash	
-sudo docker logs -f semaphore
+sudo docker compose logs -f
 ```
 
-# steps
+# UI steps for running a playbook
 
 1. create new project
 1. add key store:
