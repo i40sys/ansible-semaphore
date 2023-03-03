@@ -24,6 +24,10 @@ sudo docker images ls | grep semaphore
 git clone https://github.com/i40sys/ansible-semaphore.git
 ```
 
+## modify the docker-compose.yml file
+
+Remember to modify the environment variables of the docker-compose.yml file for setting your own parameters, for instance, the administrator password.
+
 ## create directories
 
 ```bash
